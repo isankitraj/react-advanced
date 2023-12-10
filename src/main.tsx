@@ -10,8 +10,8 @@ const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       retry: 3,    // if a query failed, react query will try 3 times
-      gcTime: 300_300, // 5m
-      staleTime: 10 * 1000, // 10s
+      gcTime: 500, // 5m
+      staleTime: 10000, // 10s
       
     }
   }
