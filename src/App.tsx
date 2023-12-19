@@ -3,7 +3,7 @@ import "./App.css";
 import PostList from "./react-query/PostList";
 import TodoForm from "./react-query/TodoForm";
 import TodoList from "./react-query/TodoList";
-import Counter from "./state-management/Counter";
+import Counter from "./state-management/counter/Counter";
 import LoginStatus from "./state-management/LoginStatus";
 import TaskList from "./state-management/tasks/TaskList";
 import NavBar from "./state-management/NavBar";
@@ -18,6 +18,7 @@ function App() {
   return (
     <AuthProvider>
       <TasksProvider>
+        <Counter />
         <NavBar />
         <HomePage />
       </TasksProvider>

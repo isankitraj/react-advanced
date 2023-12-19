@@ -46,7 +46,7 @@ interface Props {
 }
 
 const TasksProvider = ({ children }: Props) => {
-  const [tasks, dispatch] = useReducer(taskReducer, []);
+  const [tasks, dispatch] = useReducer(taskReducer, []);  // using task reducer here.
 
   return (
     <TasksContext.Provider value={{ tasks, dispatch }}>
