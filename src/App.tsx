@@ -4,25 +4,25 @@ import PostList from "./react-query/PostList";
 import TodoForm from "./react-query/TodoForm";
 import TodoList from "./react-query/TodoList";
 import Counter from "./state-management/counter/Counter";
-import LoginStatus from "./state-management/LoginStatus";
+import LoginStatus from "./state-management/auth/LoginStatus";
 import TaskList from "./state-management/tasks/TaskList";
 import NavBar from "./state-management/NavBar";
 import HomePage from "./state-management/HomePage";
 import TasksContext from "./state-management/tasks/tasksContext";
-import loginReducer from "./state-management/reducers/loginReducer";
-import loginContext from "./state-management/contexts/loginContext";
-import AuthProvider from "./state-management/AuthProvider";
+import loginReducer from "./state-management/auth/loginReducer";
+import loginContext from "./state-management/auth/loginContext";
+import AuthProvider from "./state-management/auth/AuthProvider";
 import TasksProvider from "./state-management/tasks/TasksProvider";
 
 function App() {
   return (
-    <AuthProvider>
+    // <AuthProvider>
       <TasksProvider>
         <Counter />
         <NavBar />
         <HomePage />
       </TasksProvider>
-    </AuthProvider>
+    // </AuthProvider>
   );
 }
 

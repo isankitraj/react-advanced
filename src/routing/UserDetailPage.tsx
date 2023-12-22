@@ -1,4 +1,4 @@
-const UserDetailPage = () => {
+const UserDetailPage = () => { 
   return <p>User</p>;
 };
 

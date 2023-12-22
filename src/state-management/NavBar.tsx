@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import LoginStatus from "./LoginStatus";
+import LoginStatus from "./auth/LoginStatus";
 import TasksContext from "./tasks/tasksContext";
 import useCounterStore from "./counter/store";
 

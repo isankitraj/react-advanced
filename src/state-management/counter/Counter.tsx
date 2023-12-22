@@ -28,7 +28,7 @@ const Counter = () => {
       >
         Reset
       </button>
-    </div> 
+    </div>
   );
 };
 

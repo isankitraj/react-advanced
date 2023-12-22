@@ -1,8 +1,7 @@
 import React from "react";
-import { TaskAction } from "../reducers/loginReducer";
+import { TaskAction } from "./loginReducer";
 
-
-// the type of  data that is going to be transferred to other react components via react context. 
+// the type of  data that is going to be transferred to other react components via react context.
 interface loginContextType {
   user: string;
   dispatch: React.Dispatch<TaskAction>;
